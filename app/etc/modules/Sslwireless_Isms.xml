@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<modules>
+  <Sslwireless_Isms>
+    <active>true</active>
+    <codePool>local</codePool>
+  </Sslwireless_Isms>
+</modules>
+</config>

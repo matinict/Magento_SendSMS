@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+    <Sslwireless_Isms>
+        <version>0.1.0</version>
+    </Sslwireless_Isms>
+    </modules>
+    <global>
+    <models>
+        <Sslwireless_Isms>
+        <class>Sslwireless_Isms_Model</class>
+        </Sslwireless_Isms>
+    </models>
+    <events>
+        <customer_register_success>
+        <observers>
+            <Sslwireless_Isms>
+            <type>singleton</type>
+            <class>Sslwireless_Isms/observer</class>
+            <method>SendSMS</method>
+            </Sslwireless_Isms>
+        </observers>
+        </customer_register_success>
+    </events>
+    </global>
+</config>
