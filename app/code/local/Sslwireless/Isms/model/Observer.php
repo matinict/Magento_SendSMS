@@ -9,6 +9,7 @@ class Sslwireless_Isms_Model_Observer
     {
         //$customer = $observer->getEvent()-getCustomer();
 		 $customer = $observer->getEvent()->getCustomer();
+		 
         $msisdn= $customer->getTelephone(); 
         // START At this point you can send this number to your SMS API
 			
