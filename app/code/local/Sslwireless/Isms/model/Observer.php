@@ -7,7 +7,8 @@ class Sslwireless_Isms_Model_Observer
 {
     public function SendSMS($observer)
     {
-        $customer = $observer->getEvent()-getCustomer();
+        //$customer = $observer->getEvent()-getCustomer();
+		 $customer = $observer->getEvent()->getCustomer();
         $msisdn= $customer->getTelephone(); 
         // START At this point you can send this number to your SMS API
 			
@@ -35,7 +36,7 @@ class Sslwireless_Isms_Model_Observer
 		$response = curl_exec($crl);
 		curl_close($crl);
 		//echo $response;
-		//}
+		
 		//End Sent notification 
 		
 		//End At this point you can send this number to your SMS API...
